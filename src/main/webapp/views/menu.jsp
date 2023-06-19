@@ -1,3 +1,4 @@
+<%@page import="models.Usuario"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="models.Capacitacion"%>
 <%@page import="java.util.List"%>
@@ -22,15 +23,21 @@
 	<%@ includefile = 'header.jsp' %>
 	<%
 	List<Capacitacion> capacitaciones;
+	List<Usuario> usuarios;
 	try {
 	 	capacitaciones = (List) request.getSession().getAttribute("capacitaciones");
 	} catch(java.lang.NullPointerException e) {
 		capacitaciones = new ArrayList<>();
 	}
+	try {
+	 	usuarios = (List) request.getSession().getAttribute("usuarios");
+	} catch(java.lang.NullPointerException e) {
+		usuarios = new ArrayList<>();
+	}
 	%>
 	<div class="container text-center">
 		<h1 class="mt-5" style="color: #e05757; font-size: 3vw">Menú principal</h1>
-		<h2 style="color:#b9b9c8">Estimado <%= request.getSession().getAttribute("Nombre") %>, seleccione una opción</h2>
+		<h2 style="color:#b9b9c8">seleccione una opción</h2>
 		<hr class="my-4">
 	</div>
 	<div class="container text-center">
@@ -41,6 +48,14 @@
 		<% } %>
 		<% } %>
 		
+	</div>
+	<div class="container text-center">
+		<a href="/GrupalM5/views/crearUsuario.jsp" style="text-decoration:none">Crear Usuario</a>
+		<% if(usuarios != null) { %>
+		<% if(usuarios.size() > 0) { %>
+		<a href="/GrupalM5/views/listaUsuario.jsp" style="text-decoration:none">Lista Usuarios</a>
+		<% } %>
+		<% } %>
 	</div>
 	
 	<%@ includefile = './footer.jsp' %>

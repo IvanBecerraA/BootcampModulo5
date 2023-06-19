@@ -1,8 +1,7 @@
-<body>
 	<header  >		
 		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark py-0">
 		  <div class="container-fluid py-2" style="background: #e05757">
-		    <a class="navbar-brand px-4" href="#">JSP</a>
+		    <a class="navbar-brand px-4" href="/GrupalM5/views/menu.jsp">Inicio</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
 		    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
 		    aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +10,7 @@
 		    <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item ms-1">
-                        <a class="nav-link active" aria-current="page" href="/GrupalM5/views/menu.jsp">Menú</a>
+                        <a class="nav-link active" aria-current="page" href="/GrupalM5/views/menu.jsp">Inicio</a>
                     </li>
                     <li class="nav-item ms-1">
                         <a class="nav-link active" href="/GrupalM5/views/contacto.jsp">Contacto</a>
@@ -31,4 +30,3 @@
 		  </div>
 		</nav>
 	</header>
-</body>

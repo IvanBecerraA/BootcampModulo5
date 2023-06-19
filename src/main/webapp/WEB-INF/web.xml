@@ -49,4 +49,24 @@
     <servlet-name>SvContacto</servlet-name>
     <url-pattern>/SvContacto</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CrearUsuario</display-name>
+    <servlet-name>CrearUsuario</servlet-name>
+    <servlet-class>controls.CrearUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CrearUsuario</servlet-name>
+    <url-pattern>/CrearUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SvUsuario</display-name>
+    <servlet-name>SvUsuario</servlet-name>
+    <servlet-class>controls.SvUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SvUsuario</servlet-name>
+    <url-pattern>/SvUsuario</url-pattern>
+  </servlet-mapping>
 </web-app>

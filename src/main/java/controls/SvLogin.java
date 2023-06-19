@@ -17,8 +17,8 @@ import java.io.PrintWriter;
 @WebServlet("/svLogin")
 public class SvLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private final String USUARIO = "Nelson";
-	private final String CONTRASENIA = "pass";
+	private final String USUARIO = "admin";
+	private final String CONTRASENIA = "1234";
 	
 	PrintWriter out;
        
@@ -58,8 +58,8 @@ public class SvLogin extends HttpServlet {
 		} else {
 			HttpSession sesionUsuario= request.getSession(true);
 			sesionUsuario.setAttribute("Nombre", usuarioRequest);
-			RequestDispatcher rd = request.getRequestDispatcher("views/menu.jsp");
-			rd.forward(request, response); 
+			response.sendRedirect("views/menu.jsp");
+			
 		}
 	}
 

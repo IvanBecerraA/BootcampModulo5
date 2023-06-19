@@ -1,4 +1,3 @@
-<body>
 	<footer class="footer">
         <div class="footer__bg">
             <div class="footer__container">
@@ -21,5 +20,3 @@
             <p class="footer__copy">&#169 JKS 2023. All right reserved</p>
         </div>
     </footer>
-
-</body>
