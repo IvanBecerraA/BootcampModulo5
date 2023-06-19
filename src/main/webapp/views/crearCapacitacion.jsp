@@ -17,7 +17,7 @@
 <body>
 	<%@ includefile = 'header.jsp' %>
 	<div class="container text-center my-5">
-		<h1 class="mt-5" style="color: #e05757; font-size: 3vw">Crear Capacitación</h1>
+		<h1 class="mt-5" style="font-size: 3vw">Crear Capacitación</h1>
 		<hr class="my-4">
 	</div>
 	<div class="container">
@@ -63,11 +63,8 @@
 		<div style="padding-top:50px;">
 			
 			</div>
-			<div
-				style="margin: 0 auto; padding-left: 20px; padding-right: 
-				20px; padding-bottom: 20px; float: right;">
-				<button type="submit" class="btn" style="background: #e05757; 
-				color: #fff">Crear capacitación</button>
+			<div>
+				<button type="submit" class="btn btn-dark">Crear capacitación</button>
 			</div>
 		</form>
 	</div>

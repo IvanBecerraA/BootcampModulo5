@@ -16,9 +16,10 @@
 </head>
 
 <body>
+	<!-- HEADER -->
 	<header>		
-		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark py-0">
-			  <div class="container-fluid py-2" style="background: #e05757">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark py-0">
+			  <div class="container-fluid py-2">
 				    <a class="navbar-brand px-4" href="#">JSP</a>
 				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
 				    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
@@ -44,28 +45,29 @@
 			  </div>
 		</nav>
 	</header>
-        
+    
+    <!-- MAIN --> 
     <main>
 		<div class="container main d-flex align-items-center justify-content-center" 
-		    style="max-width: 300px; height: 100vh;">
+		    style="max-width: 300px; height: 70vh;">
 			  <div style="border-radius: 18px; padding: 15px; padding-left: 45px; 
-			  border: #e05757 solid 3.5px;">
+			  border: #000000 solid 3.5px;">
 				    <form action="svLogin" method="POST" id="from">
 						      <div class="mb-3 row">
 						        <label for="user" class="col-form-label">Usuario</label>
-						        <div class="col-sm-10">
-						          <input type="text" class="border border-1 rounded-3" id="user" 
+						        <div class="col-sm-11">
+						          <input type="text" class="form-control" id="user" 
 						          aria-describedby="emailHelp" name="user" placeholder="Nombre usuario" required>
 						        </div>
 						      </div>
 						      <div class="mb-3 row">
 						        <label for="password" class="col-form-label">Contraseña</label>
-						        <div class="col-sm-10">
-						          <input type="password" name="password" class="border border-1 rounded-3" 
+						        <div class="col-sm-11">
+						          <input type="password" name="password" class="form-control" 
 						          id="password" placeholder="Ingrese contraseña" required>
 						        </div>
 						      </div>
-					      <button type="submit" class="btn" value="enviar" style="background: #e05757; color: #fff">Ingresar</button>
+					      <button type="submit" class="btn btn-dark" value="enviar">Ingresar</button>
 				    </form>
 				  <div id="formFooter">
 				  	<br/>
@@ -74,6 +76,31 @@
 			  </div>
 		</div>     
     </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container">
+                <div class="equipo__trabajo">
+                    <h1 class="footer__title">JSP</h1>
+                    <span class="footer__subtitle">Company</span>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169 JKS 2023. All right reserved</p>
+        </div>
+    </footer>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

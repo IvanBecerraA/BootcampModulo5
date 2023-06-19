@@ -23,11 +23,15 @@ String mensajeContacto = request.getParameter("mensajeContacto");
 <body>
 	<%@ includefile = 'header.jsp' %>
 	
-	<h1>Respuesta del contacto</h1>
+	<main class="container">
+		<h1 class="mt-5">Respuesta del contacto</h1>
+		<hr class="my-4">
+		<p>Nombre de contacto: <%= nombreContacto %></p>
+		<p>Email de contacto: <%= emailContacto %></p>
+		<p>Mensaje: <%= mensajeContacto %></p>
+	</main>
 	
-	<p>Nombre de contacto: <%= nombreContacto %></p>
-	<p>Email de contacto: <%= emailContacto %></p>
-	<p>Mensaje: <%= mensajeContacto %></p>
-
+	<%@ includefile = './footer.jsp' %>
+	
 </body>
 </html>

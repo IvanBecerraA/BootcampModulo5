@@ -16,7 +16,7 @@
 <body>
 <%@ includefile = 'header.jsp' %>
 
-	<div class="accordion" id="accordionExample">
+<div class="accordion container my-5"  id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -92,21 +92,15 @@
 						placeholder="ingrese la comuna de la empresa">
 				</div>
 			</div>
-		<div style="padding-top:50px;">
-			
-			</div>
 			<div>
-				<button type="submit" class="btn" style="background: #e05757; 
-				color: #fff">Crear Cliente</button>
+				<button type="submit" class="btn btn-dark">Crear Cliente</button>
 			</div>
 		</form>
-	</div>
-        
-        
-        
+		</div>  
       </div>
     </div>
   </div>
+  
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -114,11 +108,8 @@
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        
-        
-        
-        	       <div class="container">
+      <div class="accordion-body"> 
+       <div class="container">
 		<form action="/GrupalM5/SvUsuario" method="POST" class="formulario-crear-capacitacion">
 			<input hidden="true" value="profesional" name="tipoUsuario">
 			<div class="row">
@@ -157,28 +148,22 @@
 					<input type="text" class="form-control" id="titulo" name="titulo" required
 						placeholder="ingrese su título">
 				</div>
-				<div class="col-sm">
+				<div class="col-sm-8">
 					<label for="fechaIngreso">Fecha ingreso</label>
 					<input type="Date" class="form-control" id="fechaIngreso" name="fechaIngreso" required
 						placeholder="ingrese la fecha de ingreso">
 				</div>
 			</div>
-		<div style="padding-top:50px;">
-			
-			</div>
 			<div>
-				<button type="submit" class="btn" style="background: #e05757; 
-				color: #fff">Crear Profesional</button>
+				<button type="submit" class="btn btn-dark">Crear Profesional</button>
 			</div>
 		</form>
-	</div>
-        
-        
-        
-        
+		</div>
       </div>
     </div>
   </div>
+  
+  
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -188,9 +173,6 @@
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         
-
-
-
 	       <div class="container">
 		<form action="/GrupalM5/SvUsuario" method="POST" class="formulario-crear-capacitacion">
 			<input hidden="true" value="administrativo" name="tipoUsuario">
@@ -230,34 +212,24 @@
 					<input type="text" class="form-control" id="area" name="area" required
 						placeholder="ingrese el área">
 				</div>
-				<div class="col-sm">
+				<div class="col-sm-8">
 					<label for="experenciaArea">Experiencia área</label>
 					<input type="text" class="form-control" id="experenciaArea" name="experenciaArea" required
 						placeholder="ingrese la experiencia en el área">
 				</div>
 			</div>
-		<div style="padding-top:50px;">
-			
-			</div>
 			<div>
-				<button type="submit" class="btn" style="background: #e05757; 
-				color: #fff">Crear Administrativo</button>
+				<button type="submit" class="btn btn-dark">Crear Administrativo</button>
 			</div>
 		</form>
 	</div>
-
-
-
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-
 <%@ includefile = './footer.jsp' %>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>

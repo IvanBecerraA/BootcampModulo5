@@ -19,7 +19,7 @@
 	<%@ includefile = 'header.jsp' %>
 	
 	<div class="container text-center my-5">
-		<h1 class="mt-5" style="color: #e05757; font-size: 3vw">Listado de Capacitaciones</h1>
+		<h1 class="mt-5" style="font-size: 3vw">Listado de Capacitaciones</h1>
 		<hr class="my-4">
 	</div>
 	<div class="container">

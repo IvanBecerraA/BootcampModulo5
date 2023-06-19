@@ -1,8 +1,8 @@
-	<footer class="footer">
+	<footer class="footer__abs">
         <div class="footer__bg">
             <div class="footer__container">
                 <div class="equipo__trabajo">
-                    <h1 class="footer__title">JKS</h1>
+                    <h1 class="footer__title">JSP</h1>
                     <span class="footer__subtitle">Company</span>
                 </div>
                 <div class="footer__socials">

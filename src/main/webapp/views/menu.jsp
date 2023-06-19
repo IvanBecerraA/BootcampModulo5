@@ -37,8 +37,8 @@
 	}
 	%>
 	<div class="container text-center">
-		<h1 class="mt-5" style="color: #e05757; font-size: 3vw">Menú principal</h1>
-		<h2 style="color:#b9b9c8">seleccione una opción</h2>
+		<h1 class="mt-5" style="font-size: 4vw">Menú</h1>
+		<h2 style="color:#b9b9c8; font-size: 3vw">seleccione una opción</h2>
 		<hr class="my-4">
 	</div>
 	
