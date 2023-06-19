@@ -17,6 +17,7 @@
     <title>Inicio de sesión</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -40,28 +41,38 @@
 		<h2 style="color:#b9b9c8">seleccione una opción</h2>
 		<hr class="my-4">
 	</div>
-	<div class="container text-center">
-		<a href="/GrupalM5/views/crearCapacitacion.jsp" style="text-decoration:none">Crear Capacitación</a>
-		<% if(capacitaciones != null) { %>
+	
+	<div class="table-responsive m-auto my-5" style="max-width: 500px">
+	<table class="table ">
+  <tbody>
+    <tr>
+      <th scope="row">Capacitación</th>
+      <td><a href="/GrupalM5/views/crearCapacitacion.jsp" style="text-decoration:none"><i class="fa-solid fa-square-plus fa-2xl" style="color: #00e043;"></i></a></td>
+      <td><% if(capacitaciones != null) { %>
 		<% if(capacitaciones.size() > 0) { %>
-		<a href="/GrupalM5/views/listaCapacitacion.jsp" style="text-decoration:none">Lista Capacitaciones</a>
+		<a href="/GrupalM5/views/listaCapacitacion.jsp" style="text-decoration:none"><i class="fa-solid fa-list fa-2xl" style="color: #0052e0;"></i></a>
 		<% } %>
-		<% } %>
-		
-	</div>
-	<div class="container text-center">
-		<a href="/GrupalM5/views/crearUsuario.jsp" style="text-decoration:none">Crear Usuario</a>
-		<% if(usuarios != null) { %>
+		<% } %></td>
+    </tr>
+    <tr>
+      <th scope="row">Usuario</th>
+      <td><a href="/GrupalM5/views/crearUsuario.jsp" style="text-decoration:none"><i class="fa-solid fa-square-plus fa-2xl" style="color: #00e043;"></i></a></td>
+      <td><% if(usuarios != null) { %>
 		<% if(usuarios.size() > 0) { %>
-		<a href="/GrupalM5/views/listaUsuario.jsp" style="text-decoration:none">Lista Usuarios</a>
+		<a href="/GrupalM5/views/listaUsuario.jsp" style="text-decoration:none"><i class="fa-solid fa-list fa-2xl" style="color: #0052e0;"></i></a>
 		<% } %>
-		<% } %>
-	</div>
+		<% } %></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	
 	
 	<%@ includefile = './footer.jsp' %>
 	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+        
 </body>
 </html>
