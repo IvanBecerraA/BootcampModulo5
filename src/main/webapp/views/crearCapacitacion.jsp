@@ -17,7 +17,8 @@
 <body>
 	<%@ includefile = 'header.jsp' %>
 	<div class="container text-center my-5">
-		<h1>Crear Capacitación</h1>
+		<h1 class="mt-5" style="color: #e05757; font-size: 3vw">Crear Capacitación</h1>
+		<hr class="my-4">
 	</div>
 	<div class="container">
 		<form action="/GrupalM5/SvCapacitacion" method="POST" class="formulario-crear-capacitacion">
@@ -34,12 +35,12 @@
 				</div>
 				<div class="col-sm">
 					<label for="dia">Día</label> <input
-						type="text" class="form-control" id="dia" name="dia" required
+						type="Date" class="form-control" id="dia" name="dia" required
 						placeholder="día de la capacitación">
 				</div>
 				<div class="col-sm">
 					<label for="hora">Hora</label>
-					<input type="text" class="form-control" id="hora" required
+					<input type="Datetime" class="form-control" id="hora" required
 						name="hora" placeholder="hora de la capacitación">
 				</div>
 				<div class="col-sm">
@@ -54,7 +55,8 @@
 				</div>
 				<div class="col-sm">
 					<label for="cantidadAsistentes">Cantidad de Asistentes</label>
-					<input type="text" class="form-control" id="cantidadAsistentes" name="cantidadAsistentes" required
+					<input type="text" class="form-control" id="cantidadAsistentes" 
+					name="cantidadAsistentes" required
 						placeholder="cantidad de asistentes en la capacitación">
 				</div>
 			</div>
@@ -62,13 +64,16 @@
 			
 			</div>
 			<div
-				style="margin: 0 auto; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; float: right;">
-				<button type="submit" class="btn btn-success">Crear capacitación</button>
+				style="margin: 0 auto; padding-left: 20px; padding-right: 
+				20px; padding-bottom: 20px; float: right;">
+				<button type="submit" class="btn" style="background: #e05757; 
+				color: #fff">Crear capacitación</button>
 			</div>
 		</form>
 	</div>
-
-
+	
+	<%@ includefile = './footer.jsp' %>
+	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
