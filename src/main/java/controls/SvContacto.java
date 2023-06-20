@@ -39,7 +39,20 @@ public class SvContacto extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		request.getRequestDispatcher("views/respuestaContacto.jsp").forward(request, response);
+		String nombreContacto = request.getParameter("nombreContacto");
+		String emailContacto = request.getParameter("emailContacto");
+		String mensajeContacto = request.getParameter("mensajeContacto");
+		
+		HttpSession session = request.getSession();
+		session.setAttribute("nombreContacto", nombreContacto);
+		session.setAttribute("emailContacto", emailContacto);
+		session.setAttribute("mensajeContacto", mensajeContacto);
+		
+		response.sendRedirect("views/respuestaContacto.jsp");
+		
+		
+		
+		
 		
 	}
 

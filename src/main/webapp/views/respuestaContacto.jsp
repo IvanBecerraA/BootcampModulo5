@@ -1,11 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<% 
-String nombreContacto = request.getParameter("nombreContacto");
-String emailContacto = request.getParameter("emailContacto");
-String mensajeContacto = request.getParameter("mensajeContacto");
-%>
+
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +22,11 @@ String mensajeContacto = request.getParameter("mensajeContacto");
 	<main class="container">
 		<h1 class="mt-5">Respuesta del contacto</h1>
 		<hr class="my-4">
-		<p>Nombre de contacto: <%= nombreContacto %></p>
-		<p>Email de contacto: <%= emailContacto %></p>
-		<p>Mensaje: <%= mensajeContacto %></p>
+		<p>Nombre de contacto: <%= (String)request.getSession().getAttribute("nombreContacto") %></p>
+		<p>Email de contacto: <%= (String)request.getSession().getAttribute("emailContacto") %></p>
+		<p>Mensaje: <%= (String)request.getSession().getAttribute("mensajeContacto") %></p>
 	</main>
+	<div style="margin-bottom: 250px"></div>
 	
 	<%@ includefile = './footer.jsp' %>
 	
